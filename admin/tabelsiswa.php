@@ -12,6 +12,9 @@
         <h1>Daftar Siswa</h1>
         <a href="daftarsiswa.php">
             <button style="margin-bottom: 15px;">Tambah Baru</button> <br></a>
+        <a href="index.php">
+            <button style="margin-bottom: 15px;">Pulang Ke Home</button>
+        </a>
             <table border="1">
                 <tr>
                     <th>No</th>
@@ -38,7 +41,7 @@
                     <td><?php echo $row['visi']; ?></td>
                     <td><?php echo $row['misi']; ?></td>
                     <td><img src="../gambar/<?php echo $row['file'] ?>" width="100px" height="100px"></td>
-                    <td><?php echo "<a href='edit.php?id=".$row['id']."'>Edit</a> | "; ?>
+                    <td><?php echo "<a href='proses-editsiswa.php?id=".$row['id']."'>Edit</a> | "; ?>
                     <?php echo "<a href='hapussiswa.php?id=".$row['id']."'>Hapus</a> "; ?></td>
                 </tr>
                 <?php

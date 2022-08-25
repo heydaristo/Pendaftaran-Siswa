@@ -9,9 +9,12 @@
 </head>
 <body>
     <center>
-        <h1>Daftar Siswa</h1>
+        <h1>Daftar Akun Siswa</h1>
         <a href="form-daftar.php">
             <button style="margin-bottom: 15px;">Tambah Baru</button> <br></a>
+        <a href="index.php">
+            <button style="margin-bottom: 15px;">Pulang Ke Home</button>
+        </a>
             <table border="1">
                 <tr>
                     <th>No</th>

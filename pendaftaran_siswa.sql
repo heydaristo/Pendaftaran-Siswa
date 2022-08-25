@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2022 at 03:51 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Generation Time: Aug 25, 2022 at 09:08 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,26 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `pendaftaran_siswa`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `akademik`
---
-
-CREATE TABLE `akademik` (
-  `id` int(11) NOT NULL,
-  `username` varchar(250) NOT NULL,
-  `password` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `akademik`
---
-
-INSERT INTO `akademik` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin'),
-(2, 'user', 'user');
 
 -- --------------------------------------------------------
 
@@ -91,12 +71,6 @@ INSERT INTO `kandidat` (`id`, `nama`, `kelas`, `visi`, `misi`, `file`) VALUES
 --
 
 --
--- Indexes for table `akademik`
---
-ALTER TABLE `akademik`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `calon_siswa`
 --
 ALTER TABLE `calon_siswa`
@@ -113,22 +87,16 @@ ALTER TABLE `kandidat`
 --
 
 --
--- AUTO_INCREMENT for table `akademik`
---
-ALTER TABLE `akademik`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT for table `calon_siswa`
 --
 ALTER TABLE `calon_siswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `kandidat`
 --
 ALTER TABLE `kandidat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
